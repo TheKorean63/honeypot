@@ -12,22 +12,14 @@
 
 ### Dionaea Honeypot Deployment (Required)
 
-**Summary:** Briefly in your own words, what does dionaea do?
+**Summary:** Dionaea traps and captures any type of malware that attempts to connect to it. 
 
 <img src="honeypot.png">
 
 ### Database Backup (Required) 
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
-
-*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
-
-MD5 Hash: *Run `md5sum` on the file and record the hash here.*
-
-SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
-
-<img src="x-malware.gif">
+**Summary:** MHN-Admin uses MongoDB for its RDBMS. You can find this out because the command used to export the .json file uses a MongoDB call. The .json file includes all of the attacker's information when it comes to the time, IP, port, identifier, and which honeypot captured it. 
 
 ## Notes
 
-Describe any challenges encountered while doing the assignment.
+I had to redo the entire project due to the mhn-admin page not capturing any attacks under the Attack tab even though on the Map, it showed attacks happening.
